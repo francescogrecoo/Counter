@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body{
+  background-color:  #feae47;
+  background-image: url(img/background-header.png);
+  background-repeat: no-repeat;
+}
+
+main{
+    background-color: #24252a;
+    width: 240px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 20px;
+    border: 3px solid #feae47;
+}
+
+/* animazione iniziale */
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 1s ease-in-out 1 both;
+	        animation: scale-up-center 1s ease-in-out 1 both;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+#title{
+  text-align: center;
+  font-size: 1.8em;
+  color: #feae47;
+  margin-top: 5px;
+}
+
+.cont-result{
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  color: #feae47 ;
+}
+
+.cont-button{
+  width: 100%;
+  height: 23%; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#plus , #minus{
+  width: 60px;
+  height: 50px;
+}
+
+.cont-clean{
+  width: 100%;
+  height: 70px;
+  position: relative;
+  margin-top: 10px;
+}
+
+#clean{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 120px;
+  height: 50px;
+}
+
+.button{
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  font-size: 1.3em;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+.button:focus{
+  border: 3px solid #feae47;
+}
+
+@media only screen and (min-width: 1367px){
+  body{
+    background-image: url(img/background-header-1366.png);
+    background-repeat: repeat-x;
+  }
+}
